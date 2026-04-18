@@ -11,11 +11,14 @@
 		1B2FBFF2AEDFA16D8CA16DDA /* Shortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9B67BD6ED985817A3247C /* Shortcut.swift */; };
 		6625384E92790CD52D36E2C8 /* ShortcutRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6124C58D84D05BE2301EAE6 /* ShortcutRowView.swift */; };
 		723507255B39948DC7A926B9 /* ShortcutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E3CFB07E500F9120808CE /* ShortcutService.swift */; };
+		76084545F2F757AAA69588E1 /* DocumentExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E313688683963B46ACD7DEF9 /* DocumentExporter.swift */; };
+		83F6D10362816C82C430F55B /* AppScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6602129C6356E2E1A6BD917 /* AppScanner.swift */; };
 		85E3C47C42804C00959D6830 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C47AC0BA04761E90E598746 /* SidebarView.swift */; };
 		8A329EC8FF2D915531F7526A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC95839CE4628CBC806BF131 /* Assets.xcassets */; };
 		A37AC4C8ED9C2715350C6A58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC47A681D4B58F6F2ECAA6 /* ContentView.swift */; };
 		AEF0B6C3848FB3D6F59FA2ED /* ShortcutHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55B5A21E939845451CEFC3 /* ShortcutHubApp.swift */; };
 		B228DEFAFBD172724FDA57DA /* ShortcutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F45BEFE3D141BAE7658C4D7 /* ShortcutListView.swift */; };
+		C5F340AEAA44AFE74BF66434 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32321A7E232CB804E2B235F /* ScanView.swift */; };
 		CC9BE3E52330E78C3164917C /* AddShortcutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD04C343AF5F51BDA1387FC /* AddShortcutView.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +30,11 @@
 		9CD04C343AF5F51BDA1387FC /* AddShortcutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShortcutView.swift; sourceTree = "<group>"; };
 		AA55B5A21E939845451CEFC3 /* ShortcutHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutHubApp.swift; sourceTree = "<group>"; };
 		B8CC47A681D4B58F6F2ECAA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6602129C6356E2E1A6BD917 /* AppScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScanner.swift; sourceTree = "<group>"; };
 		D6124C58D84D05BE2301EAE6 /* ShortcutRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutRowView.swift; sourceTree = "<group>"; };
 		DAF1652B097E3D0417CD17E9 /* BuiltinShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltinShortcuts.swift; sourceTree = "<group>"; };
+		E313688683963B46ACD7DEF9 /* DocumentExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentExporter.swift; sourceTree = "<group>"; };
+		E32321A7E232CB804E2B235F /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		EAF9B67BD6ED985817A3247C /* Shortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcut.swift; sourceTree = "<group>"; };
 		FC95839CE4628CBC806BF131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				9CD04C343AF5F51BDA1387FC /* AddShortcutView.swift */,
+				E32321A7E232CB804E2B235F /* ScanView.swift */,
 				6F45BEFE3D141BAE7658C4D7 /* ShortcutListView.swift */,
 				D6124C58D84D05BE2301EAE6 /* ShortcutRowView.swift */,
 				6C47AC0BA04761E90E598746 /* SidebarView.swift */,
@@ -65,6 +72,8 @@
 		D35DCC0404711D55EC0FA3D7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C6602129C6356E2E1A6BD917 /* AppScanner.swift */,
+				E313688683963B46ACD7DEF9 /* DocumentExporter.swift */,
 				1C7E3CFB07E500F9120808CE /* ShortcutService.swift */,
 			);
 			path = Services;
@@ -162,8 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC9BE3E52330E78C3164917C /* AddShortcutView.swift in Sources */,
+				83F6D10362816C82C430F55B /* AppScanner.swift in Sources */,
 				015E5FE8CDC25D15C4417DB9 /* BuiltinShortcuts.swift in Sources */,
 				A37AC4C8ED9C2715350C6A58 /* ContentView.swift in Sources */,
+				76084545F2F757AAA69588E1 /* DocumentExporter.swift in Sources */,
+				C5F340AEAA44AFE74BF66434 /* ScanView.swift in Sources */,
 				1B2FBFF2AEDFA16D8CA16DDA /* Shortcut.swift in Sources */,
 				AEF0B6C3848FB3D6F59FA2ED /* ShortcutHubApp.swift in Sources */,
 				B228DEFAFBD172724FDA57DA /* ShortcutListView.swift in Sources */,
