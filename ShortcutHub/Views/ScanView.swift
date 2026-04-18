@@ -55,7 +55,7 @@ struct ScanView: View {
         HStack(spacing: 10) {
             Image(systemName: "keyboard.badge.eye")
                 .font(.title2)
-                .foregroundStyle(.accent)
+                .foregroundStyle(Color.accentColor)
             VStack(alignment: .leading, spacing: 2) {
                 Text("自动扫描应用快捷键")
                     .font(.headline)
@@ -119,7 +119,7 @@ struct ScanView: View {
                 }
                 .buttonStyle(.plain)
                 .font(.caption)
-                .foregroundStyle(.accent)
+                .foregroundStyle(Color.accentColor)
             }
             .padding(.horizontal, 8)
             .padding(.bottom, 4)
@@ -251,7 +251,7 @@ struct ScanView: View {
         HStack(spacing: 10) {
             if !scanner.scanProgress.isEmpty, !scanner.isScanning {
                 Image(systemName: scanner.scannedResults.isEmpty ? "exclamationmark.circle" : "checkmark.circle.fill")
-                    .foregroundStyle(scanner.scannedResults.isEmpty ? .secondary : .green)
+                    .foregroundStyle(scanner.scannedResults.isEmpty ? Color.secondary : Color.green)
                 Text(scanner.scanProgress)
                     .font(.caption)
                     .foregroundStyle(.secondary)
